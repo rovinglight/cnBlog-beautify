@@ -1,0 +1,9 @@
+.App {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: white;
+  background: radial-gradient(at top right, #5f545a, #2c293f, #1e1c32);
+}

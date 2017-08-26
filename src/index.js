@@ -1,6 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import App from './components/App';
+import indexFetcher from './module/indexFetcher'
 
-ReactDOM.render(<App />, document.body);
+import './index.css';
+
+const indexData = indexFetcher.fetch()
+
+ReactDOM.render(<App indexData={indexData} />, document.body);
