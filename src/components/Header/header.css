@@ -1,0 +1,16 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+header ul {
+  width: 40%;
+  display: block;
+  float: right;
+}
+header ul li {
+  display: block;
+  float: right;
+  margin-right: 6%;
+}

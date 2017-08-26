@@ -1,3 +1,14 @@
+/*--------------- Preset -----------------*/
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.25s;
+  color: #ddd;
+}
+a:hover {
+  color: #bbb;
+}
+/*--------------- Preset -----------------*/
 .App {
   position: absolute;
   top: 0;
