@@ -8,7 +8,20 @@ a {
 a:hover {
   color: #bbb;
 }
+.card {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+h2 {
+  margin: 0;
+}
+ul {
+  padding: 0;
+}
+.font-48 {
+  font-size: 48px;
+}
 /*--------------- Preset -----------------*/
+/*----------------- App ------------------*/
 .App {
   position: absolute;
   top: 0;
@@ -16,5 +29,15 @@ a:hover {
   right: 0;
   bottom: 0;
   color: white;
-  background: radial-gradient(at top right, #5f545a, #2c293f, #1e1c32);
+  background: white;
+  overflow-y: scroll;
 }
+.App .banner {
+  width: 100%;
+  position: fixed;
+  top: 65px;
+}
+.App .mainContent {
+  margin-top: 18%;
+}
+/*----------------- App ------------------*/

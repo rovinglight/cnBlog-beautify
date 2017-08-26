@@ -3,14 +3,45 @@ header {
   top: 0;
   left: 0;
   right: 0;
+  background-color: white;
+  height: 65px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 10;
 }
 header ul {
-  width: 40%;
+  width: 60%;
   display: block;
   float: right;
+  padding: 3px 0;
 }
 header ul li {
   display: block;
   float: right;
   margin-right: 6%;
+  font-size: 16px;
+  padding: 3px 0;
+}
+header ul a {
+  color: #666;
+}
+header .profile {
+  float: left;
+  width: 40%;
+  height: 100%;
+  position: relative;
+}
+header .profile img {
+  float: left;
+  border-radius: 50%;
+  height: 55px;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+header .profile span {
+  display: inline-block;
+  float: left;
+  color: #666;
+  line-height: 65px;
+  margin-left: 15px;
+  height: 65px;
 }

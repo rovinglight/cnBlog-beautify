@@ -1,0 +1,29 @@
+/*------------- articleList --------------*/
+.artList {
+  position: relative;
+}
+.artList .artItem {
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  height: 250px;
+  padding: 15px;
+  background-color: white;
+  opacity: 0.9;
+  color: #888
+}
+.artList .aboutMe {
+  width: 40%;
+  margin: 0 auto;
+  margin-bottom: 10%;
+  text-align: center;
+  overflow: hidden;
+}
+.artList .aboutMe h2 {
+  font-size: 48px;
+}
+.artList .aboutMe .blogTitle {
+  float: left;
+  margin-left: 5%;
+}
+/*------------- articleList --------------*/

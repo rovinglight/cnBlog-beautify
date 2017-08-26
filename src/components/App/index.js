@@ -1,19 +1,18 @@
 import React, { Component } from 'react';
-import Header from '../Header'
+import Header from '../Header';
+import ArticleList from '../ArticleList';
 import './App.css';
+import bgImg from '../../asset/img/bg.jpg'
 
 class App extends Component {
-
-  constructor (props) {
-    super (props)
-  }
 
   render() {
     return (
       <div className="App">
+        <img className='banner' src={bgImg} />
         <Header />
         <div className='mainContent'>
-
+          <ArticleList indexData={this.props.indexData} />
         </div>
       </div>
     );
