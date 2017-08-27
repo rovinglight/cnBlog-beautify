@@ -7,6 +7,7 @@ a {
 }
 a:hover {
   color: #bbb;
+  text-decoration: none;
 }
 .card {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -32,12 +33,8 @@ ul {
   background: #eee;
   overflow-y: scroll;
 }
-.App .banner {
-  width: 100%;
-  position: fixed;
-  top: 65px;
-}
 .App .mainContent {
-  margin-top: 18%;
+  margin-top: 65px;
+  width: 100%;
 }
 /*----------------- App ------------------*/

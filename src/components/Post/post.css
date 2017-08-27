@@ -1,0 +1,23 @@
+.post {
+  color: #666;
+}
+.post .banner {
+  width: 100%;
+}
+.post .postContent {
+  width: 60%;
+  margin: 0 auto;
+}
+.post .postContent h2 {
+  font-size: 48px;
+  padding: 20px;
+  text-align: center;
+  color: #444;
+}
+.post .postContent #cnblogs_post_body p {
+  margin: 30px 0;
+}
+.post .postContent tbody {
+  display: block;
+  margin: 0 auto;
+}

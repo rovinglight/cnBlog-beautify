@@ -1,4 +1,12 @@
 /*------------- articleList --------------*/
+.artListContainer {
+  margin-top: 18%;
+}
+.artListContainer .banner {
+  width: 100%;
+  position: fixed;
+  top: 65px;
+}
 .artList {
   position: relative;
 }
