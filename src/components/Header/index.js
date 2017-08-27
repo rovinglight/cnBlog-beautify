@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './header.css';
-import avatar from '../../asset/img/avatar.jpg'
 
 class Header extends Component {
 
@@ -8,7 +7,7 @@ class Header extends Component {
     return (
       <header>
         <div className='profile'>
-          <img src='https://rovinglight.github.io/cnBlog-beautify/build/static/media/avatar.jpg' alt='avatar'/>
+          <img src='https://rovinglight.github.io/cnBlog-beautify/build/asset/img/avatar.jpg' alt='avatar'/>
           <span>Designed By Rovinglight</span>
         </div>
         <ul>
