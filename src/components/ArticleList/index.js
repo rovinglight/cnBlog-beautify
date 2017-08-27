@@ -13,7 +13,7 @@ class ArticleList extends Component {
   render () {
     return (
       <div className='artListContainer'>
-        <img className='banner' src={bgImg} alt='banner' />
+        <img className='banner' src='https://rovinglight.github.io/cnBlog-beautify/build/static/media/bg.jpg' alt='banner' />
         <div className='artList'>
           <div className='aboutMe'>
             <h2>坎大哈的白衣天使</h2>
