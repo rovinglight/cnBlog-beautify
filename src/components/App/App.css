@@ -29,7 +29,7 @@ ul {
   right: 0;
   bottom: 0;
   color: white;
-  background: white;
+  background: #eee;
   overflow-y: scroll;
 }
 .App .banner {

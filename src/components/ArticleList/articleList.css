@@ -2,18 +2,35 @@
 .artList {
   position: relative;
 }
+.artList .banner {
+  width: 100%;
+  position: fixed;
+  top: 65px;
+  z-index: 0;
+}
 .artList .artItem {
   width: 60%;
   margin: 0 auto;
   margin-bottom: 30px;
-  height: 250px;
+  height: 150px;
   padding: 15px;
   background-color: white;
   opacity: 0.9;
-  color: #888
+  color: #666;
+  transition: all 0.25s;
+  display: flex;
+  align-items:center;/*垂直居中*/
+  justify-content: center;/*水平居中*/
+}
+.artList .artItem:hover {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.artList .artItem:active {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 .artList .aboutMe {
-  width: 40%;
+  width: 100%;
   margin: 0 auto;
   margin-bottom: 10%;
   text-align: center;
@@ -25,5 +42,18 @@
 .artList .aboutMe .blogTitle {
   float: left;
   margin-left: 5%;
+}
+.artList .artContent {
+  width: 90%;
+  text-align: center;
+  display: flex;
+}
+.artList .artContent h3 {
+  width: 30%;
+}
+.artList .artContent p {
+  margin-left: 10px;
+  padding-left: 10px;
+  border-left: 1px solid rgba(0, 0, 0, 0.5);
 }
 /*------------- articleList --------------*/

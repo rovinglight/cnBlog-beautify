@@ -4,6 +4,12 @@ import avatar from '../../asset/img/avatar.jpg'
 import './articleList.css'
 
 class ArticleList extends Component {
+
+  jumpToArticle (ev) {
+    //Header drop down to cover the page ;
+    window.location = ev.currentTarget.dataset.url;
+  }
+
   render () {
     return (
       <div className='artList'>
@@ -14,8 +20,17 @@ class ArticleList extends Component {
         {
           this.props.indexData.posts.map((post, index) => {
             return (
-              <div key={index} className='artItem card'>
-                {post.title}
+              <div
+                data-url={post.url}
+                key={index}
+                className='artItem card'
+                onClick={this.jumpToArticle}
+                >
+                <div className='artContent'>
+                  <h3>{post.title}</h3>
+                  <p>{post.summ}</p>
+                </div>
+
               </div>
             )
           })
