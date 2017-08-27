@@ -13,8 +13,8 @@ class App extends Component {
         <div className='mainContent'>
           {
             this.props.page === 'post' ?
-            (<Post />) :
-            (<ArticleList indexData={this.props.data} />)
+            (<Post postData={this.props.data.post} />) :
+            (<ArticleList indexData={this.props.data.posts} />)
           }
         </div>
       </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './components/App';
-import indexFetcher from './module/indexFetcher'
+import dataFetcher from './module/dataFetcher'
 
 import './index.css';
 
@@ -11,10 +11,11 @@ let url = window.location;
 url = url.href.split('/');
 if (url.indexOf('p') === -1) {
   page = 'index'
-  data = indexFetcher.fetchIndex()
+  data = dataFetcher.fetchIndex()
 } else {
   page = 'post';
-  console.log('post page')
+  data = dataFetcher.fetchPost()
+  console.log(data.post)
 }
 
 ReactDOM.render(<App page={page} data={data} />, document.body);

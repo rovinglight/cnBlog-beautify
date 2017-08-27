@@ -20,7 +20,7 @@ class ArticleList extends Component {
             <span>Angel in white from Kandahar</span>
           </div>
           {
-            this.props.indexData.posts.map((post, index) => {
+            this.props.indexData.map((post, index) => {
               return (
                 <div
                   data-url={post.url}
