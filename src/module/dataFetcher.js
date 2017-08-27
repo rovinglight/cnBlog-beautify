@@ -30,6 +30,8 @@ class dataFetcher {
     let next_prev_frag = document.createDocumentFragment();
     let social_buttons = document.querySelector('#green_channel');
     let comment = document.querySelector('#comment_form');
+    let comments = document.querySelector('#blog-comments-placeholder');
+    this.data.post.commentDetail = comments;
     this.data.post.comment = comment;
     this.data.post.social_buttons = social_buttons;
     this.data.post.next_prev = [];

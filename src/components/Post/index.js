@@ -13,6 +13,7 @@ class Post extends Component {
           <div ref={(nodeElement) => {nodeElement.appendChild(this.props.postData.body)}}/>
           <div ref={(nodeElement) => {nodeElement.appendChild(this.props.postData.next_prev)}}/>
           <div ref={(nodeElement) => {nodeElement.appendChild(this.props.postData.social_buttons)}}/>
+          <div ref={(nodeElement) => {nodeElement.appendChild(this.props.postData.commentDetail)}}/>
           <div ref={(nodeElement) => {nodeElement.appendChild(this.props.postData.comment)}}/>
         </div>
       </div>
