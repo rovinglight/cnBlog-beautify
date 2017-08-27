@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-import avatar from '../../asset/img/avatar.jpg'
 import './articleList.css'
 
 class ArticleList extends Component {

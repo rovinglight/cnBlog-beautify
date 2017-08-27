@@ -5,6 +5,16 @@ import indexFetcher from './module/indexFetcher'
 
 import './index.css';
 
-const indexData = indexFetcher.fetch()
+let data = {};
+let page = 'index';
+let url = window.location;
+url = url.href.split('/');
+if (url.indexOf('p') === -1) {
+  page = 'index'
+  data = indexFetcher.fetchIndex()
+} else {
+  page = 'post';
 
-ReactDOM.render(<App indexData={indexData} />, document.body);
+}
+
+ReactDOM.render(<App page={page} data={data} />, document.body);

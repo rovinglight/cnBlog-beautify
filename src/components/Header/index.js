@@ -8,7 +8,7 @@ class Header extends Component {
     return (
       <header>
         <div className='profile'>
-          <img src={avatar} />
+          <img src={avatar} alt='avatar'/>
           <span>Designed By Rovinglight</span>
         </div>
         <ul>

@@ -9,10 +9,14 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <img className='banner' src={bgImg} />
+        <img className='banner' src={bgImg} alt='banner' />
         <Header />
         <div className='mainContent'>
-          <ArticleList indexData={this.props.indexData} />
+          {
+            this.props.page === 'post' ?
+            null :
+            (<ArticleList indexData={this.props.data} />)
+          }
         </div>
       </div>
     );

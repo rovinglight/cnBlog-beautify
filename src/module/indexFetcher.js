@@ -4,7 +4,7 @@ class indexFetcher {
       posts: []
     }
   }
-  fetch () {
+  fetchIndex () {
     let post_titles = document.querySelectorAll('.postTitle>a');
     let post_summs = document.querySelectorAll('.c_b_p_desc');
     let post_descs = document.querySelectorAll('.postDesc');
@@ -21,6 +21,9 @@ class indexFetcher {
       this.data.posts[index].date = desc.innerText.substr(9, 10)
     });
     return this.data
+  }
+  fetchPost () {
+    
   }
 
 }
