@@ -14,7 +14,7 @@ if (url.indexOf('p') === -1) {
   data = indexFetcher.fetchIndex()
 } else {
   page = 'post';
-
+  console.log('post page')
 }
 
 ReactDOM.render(<App page={page} data={data} />, document.body);

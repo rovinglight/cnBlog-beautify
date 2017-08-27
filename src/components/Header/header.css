@@ -13,6 +13,7 @@ header ul {
   display: block;
   float: right;
   padding: 3px 0;
+  margin: 16px 0;
 }
 header ul li {
   display: block;
@@ -23,6 +24,7 @@ header ul li {
 }
 header ul a {
   color: #666;
+  text-decoration: none;
 }
 header .profile {
   float: left;
