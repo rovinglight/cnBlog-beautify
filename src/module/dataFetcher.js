@@ -29,11 +29,16 @@ class dataFetcher {
     let post_next_prev = document.querySelectorAll('#post_next_prev a');
     let next_prev_frag = document.createDocumentFragment();
     let social_buttons = document.querySelector('#green_channel');
+    let social_script = [];
     let comment = document.querySelector('#comment_form');
     let comments = document.querySelector('#blog-comments-placeholder');
     this.data.post.commentDetail = comments;
     this.data.post.comment = comment;
-    this.data.post.social_buttons = social_buttons;
+    console.log(comment);
+    [].forEach.call(social_buttons.children, (child, index) => {
+      social_script[index] = child.getAttribute('onclick');
+    });
+    this.data.post.social_script = social_script;
     this.data.post.next_prev = [];
     [].forEach.call(post_next_prev, (link) => {
       if (link.innerText.length > 2) {
