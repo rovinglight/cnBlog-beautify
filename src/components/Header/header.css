@@ -47,3 +47,31 @@ header .profile span {
   margin-left: 15px;
   height: 65px;
 }
+header .mobile_header {
+  display: none;
+  color: rgba(0, 0, 0, 0.8);
+}
+header .mobile_header .header_left {
+  float: left;
+}
+header .mobile_header .header_right {
+  float: right;
+  text-align: right;
+  padding-right: 5px;
+}
+/*------------- responsive ---------------*/
+@media (max-width: 800px) {
+  header .profile {
+    display: none;
+  }
+  header ul {
+    display: none;
+  }
+  header .mobile_header {
+    display: block;
+    height: 65px;
+    width: 100%;
+    line-height: 65px;
+  }
+}
+/*------------- responsive ---------------*/

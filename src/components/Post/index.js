@@ -34,7 +34,6 @@ class Post extends Component {
             <div className='favoriteTitle'>快来支持我</div>
             <p>点击下面的按钮来让我感受一下你们的爱</p>
           </section>
-          <MuiThemeProvider>
             <div>
             <div className='postActions'>
               <div className='socialBotton'>
@@ -73,7 +72,6 @@ class Post extends Component {
               </div>
             </div>
           </div>
-          </MuiThemeProvider>
 
           {/* <div ref={(nodeElement) => {nodeElement.appendChild(this.props.postData.next_prev)}}/> */}
           <div ref={(nodeElement) => {nodeElement.appendChild(this.props.postData.commentDetail)}}/>

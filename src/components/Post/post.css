@@ -70,3 +70,10 @@
   display: flex;
   align-items: center;
 }
+/*------------- responsive ---------------*/
+@media (max-width: 800px) {
+  .post .postContent {
+    width: 90%;
+  }
+}
+/*------------- responsive ---------------*/
